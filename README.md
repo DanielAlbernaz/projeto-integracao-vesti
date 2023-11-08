@@ -3,6 +3,10 @@
 ## Inicio do ambiente docker
 
 ```bash
+
+# Após realizar o clone do repositório, navegar para dentro do projeto
+$ cd projeto-integracao-vesti
+
 # iniciar submodulo do laradock do projeto
 $ git submodule update --init --recursive
 
