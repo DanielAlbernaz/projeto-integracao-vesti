@@ -12,7 +12,7 @@ $ cd laradock
 # criar o .env local copiando do .env.example do projeto
 $ cp env-example .env
 
-# se for usuário linux ou tiver instalado um servidor web e/ou mysql na sua máquina, alterar as seguintes portas
+# se for usuário linux ou tiver instalado um servidor web e/ou postgres na sua máquina, alterar as seguintes portas
 NGINX_HOST_HTTP_PORT=80 --> NGINX_HOST_HTTP_PORT=8000 por exemplo
 POSTGRES_PORT=5432 --> POSTGRES_PORT=5433 por exemplo
 
@@ -21,7 +21,7 @@ POSTGRES_DB=vesti
 POSTGRES_USER=vesti
 POSTGRES_PASSWORD=root
 
-# subir os containers necessários para o ambiente de desenvolvimento, nginx e mysql
+# subir os containers necessários para o ambiente de desenvolvimento, nginx e postgres
 $ docker-compose up -d nginx postgres
 
 # caso esteja em linux os comandos de docker-compose precisam estar em super usuário. Por exemplo:
@@ -52,6 +52,5 @@ DB_DATABASE=laravel --> DB_DATABASE=vesti
 DB_USERNAME= --> DB_USERNAME=vesti
 DB_PASSWORD= --> DB_PASSWORD=root
 
-para acessar a integração de produtos basta acessar a url: 'http://sua_url_porta/products'.
+para acessar a integração de produtos basta acessar a url: http://sua_url_porta/products.
 
-Para detalhes da documentação do Laravel [Laravel docs](https://laravel.com).
